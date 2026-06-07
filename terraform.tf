@@ -3,14 +3,14 @@
 
 terraform {
 
-  /* Uncomment this block to use Terraform Cloud for this tutorial
+  /* Uncomment this block to use Terraform Cloud for this tutorial */
   cloud {
-      organization = "organization-name"
+      organization = "terraform_riorio_organization"
       workspaces {
         name = "learn-terraform-variables"
       }
   }
-  */
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
